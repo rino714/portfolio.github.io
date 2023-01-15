@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'quiz/index'
+  get 'quiz/new'
+  get 'quiz/show'
+  get 'quiz/edit'
   get "users/:id/edit" => "users#edit"
   post "users/create" => "users#create"
   get "signup" => "users#new"
@@ -15,4 +19,6 @@ Rails.application.routes.draw do
   
   get "/" => "home#top"
   get "about" => "home#about"
+
+  get "quiz/index" => "quiz#index"
 end
