@@ -14,7 +14,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(content: params[:content])
     if @post.save
-      flash[:notice] = "スライドを作成しました"
+      flash[:notice] = "応用問題を送信しました"
       redirect_to("/posts/index")
     else
       render("posts/new")
@@ -29,18 +29,11 @@ class PostsController < ApplicationController
     @post = Post.find_by(id: params[:id])
     @post.content = params[:content]
     if @post.save
-      flash[:notice] = "スライドを編集しました"
+      flash[:notice] = "応用問題を修正しました"
       redirect_to("/posts/index")
     else
       render("posts/edit")
     end
   end
-  
-  def destroy
-    @post = Post.find_by(id: params[:id])
-    @post.destroy
-    flash[:notice] = "スライドを削除しました"
-    redirect_to("/posts/index")
-  end
-  
+
 end

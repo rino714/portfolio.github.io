@@ -12,16 +12,28 @@
     <link rel="shortcut icon" href="../img/hataraku.png">
     <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" href="../all.css">
-    <link rel="stylesheet" type="text/css" href="../quiz/quiz.css">
     <title>CPM-program</title>
 </head>
 <body>
     <main>  
+    <% 
+    qa0 = ["print()の処理方法は？","()内の文字列を出力できる","()内の文字列を出力して、最後に改行が追加される","キーボードで打ち込んだ文字を取り出す",1]
+    qa1 = ["getsの処理方法は？","キーボードで打ち込んだ文字を取り出す","コメント文にする","対応する値を整数の文字列に置き換える",1]
+    qa2 = ["％d、％f、％sが使える出力形式は？","print","gets","printf",3]
+    qa3 = ["対応する値を文字列に置き換えるのはどれ？","％d","％s","％f",2]
+    qa4 = ["「#」を使った時はどのように処理が行われる？","改行される","掛け算される","コメントアウトされる",3]
+    qa5 = ["プログラムの一部を実行させなかったり、同じ処理を何回も繰り返したりすることができるものは？","制御構造","破壊的操作","乱数",1]
+    qa6 = ["redoの処理内容は？","処理を中止して、ループを終わらせる","条件を判断せず、処理を最初からやり直す","処理をスキップして、次のループに移る",2]
+    qa7 = ["forの処理方法は？","配列や範囲などの複数の間を順に変数に代入する","配列の要素を小さい順に並べ替えた結果を返す","配列の末尾に要素を追加する",1]
+    qa8 = ["変数とは何か？","値につける名前","複数の値をひとまとめにできるもの","数字の中からランダムに発生させる数",1]
+    qa9 = ["Time.now を使うと何ができる？","一時停止できる","配列の要素を小さい順に並べ替えれる","現在の時刻を受け取ることができる",3]
+    >
         <div class="quiz-inner">
             <h1 class="page-title">Rubyクイズ①</h1>
             <div class="blackboard-box">
-                <div class="quiz-text question" id="text_q"></div>
+                <div class="quiz-text question">
+                <% >
+                </div>
                 <div class="chalk1"></div>
                 <div class="chalk2"></div>
                 </div>

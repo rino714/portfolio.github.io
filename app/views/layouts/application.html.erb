@@ -15,9 +15,9 @@
 </div>
 <nav class="header-nav-left">
     <ul class="header-list">
-        <li class="header-list-item"><%= link_to("演習機能","/posts/new")%></li>
-        <li class="header-list-item"><%= link_to("Rubyクイズ","/quiz/index")%></li>
-        <li class="header-list-item"><%= link_to("本日の応用問題","/posts/index")%></li>
+        <li class="header-list-item"><%= link_to("応用問題","/posts/new")%></li>
+        <li class="header-list-item"><%= link_to("Rubyクイズ","/seikou")%></li>
+        <li class="header-list-item"><%= link_to("応用問題みんなの回答","/posts/index")%></li>
         <li class="header-list-item"><%= link_to("新規登録", "/signup")%></li>
     </ul>
 </nav>
@@ -25,7 +25,7 @@
     <ul class="header-list-icon">
         <li class="list-icon-item"><a href=""><img src="/mail-icon.png" alt=""></a></li>
         <li class="list-icon-item"><a href=""><img src="/ring-icon.png" alt=""></a></li>
-        <li class="list-icon-item"><a href=""><img src="/human-icon.png" alt=""></a></li>
+        <li class="list-icon-item"><%= link_to(image_tag("/human-icon.png"), "/users/index") %></li>
     </ul>
 </nav>
 </header>
