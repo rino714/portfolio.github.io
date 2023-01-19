@@ -21,5 +21,5 @@ Rails.application.routes.draw do
   get "about" => "home#about"
 
   get "quiz/index" => "quiz#index"
-  get "seikou" => "quiz#quiz-2"
+  get "jd/CPM-program/quiz" => "quiz#quiz-2"
 end
