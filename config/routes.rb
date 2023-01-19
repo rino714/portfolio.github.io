@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'quiz/edit'
   get "users/:id/edit" => "users#edit"
   post "users/create" => "users#create"
-  get "signup" => "users#new"
+  get "jd/CPM-program/users/new" => "users#new"
   get "users/index" => "users#index"
   get "users/:id" => "users#show"
 
