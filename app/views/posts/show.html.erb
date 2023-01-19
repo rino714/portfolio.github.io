@@ -2,7 +2,9 @@
   <div class="container">
     <div class="posts-show-item">
       <p>
-        <%= @post.content %>
+      <%= @posts.each do |post| %>  
+        <td><%= post.content %></td> 
+      <% end %>
       </p>
       <div class="post-time">
         <%= @post.created_at %>
