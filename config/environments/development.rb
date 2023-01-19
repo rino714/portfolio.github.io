@@ -60,6 +60,7 @@ Rails.application.configure do
   config.assets.quiet = true
 
   config.hosts.clear
+  Rails.application.config.relative_url_root = "/CPM-program"
 
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true

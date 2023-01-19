@@ -5,12 +5,12 @@ Rails.application.routes.draw do
   get 'quiz/edit'
   get "users/:id/edit" => "users#edit"
   post "users/create" => "users#create"
-  get "jd/CPM-program/users/new" => "users#new"
-  get "jd/CPM-program/users/index" => "users#index"
+  get "/CPM-program/users/new" => "users#new"
+  get "/CPM-program/users/index" => "users#index"
   get "users/:id" => "users#show"
 
   get "posts/index" => "posts#index"
-  get "jd/CPM-program/posts/new" => "posts#new"
+  get "/CPM-program/posts/new" => "posts#new"
   get "posts/:id" => "posts#show"
   post "posts/create" => "posts#create"
   get "posts/:id/edit" => "posts#edit"
