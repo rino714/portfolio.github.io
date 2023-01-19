@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get "/CPM-program/users/index" => "users#index"
   get "users/:id" => "users#show"
 
-  get "posts/index" => "posts#index"
+  get "/CPM-program/posts/index" => "posts#index"
   get "/CPM-program/posts/new" => "posts#new"
   get "posts/:id" => "posts#show"
   post "posts/create" => "posts#create"
