@@ -12,13 +12,14 @@ class UsersController < ApplicationController
     
   end
   
+  protect_from_forgery except: :create
   def create
     @user = User.new(name: params[:name], email: params[:email])
       if @user.save
       flash[:notice] ="ユーザー登録が完了しました" 
-      redirect_to("/users/#{@user.id}")
+      redirect_to("/CPM-program/users/#{@user.id}")
     else
-      render("users/new")
+      render("/CPM-program/users/new")
     end
   end
 

@@ -20,7 +20,7 @@ class PostsController < ApplicationController
       flash[:notice] = "応用問題を送信しました"
       redirect_to("/CPM-program/posts/index")
     else
-      render("CPM-program/posts/new")
+      render("/CPM-program/posts/new")
     end
   end
   
@@ -28,6 +28,7 @@ class PostsController < ApplicationController
     @post = Post.find_by(id: params[:id])
   end
   
+  protect_from_forgery except: :update
   def update
     @post = Post.find_by(id: params[:id])
     @post.content = params[:content]
@@ -35,7 +36,7 @@ class PostsController < ApplicationController
       flash[:notice] = "応用問題を修正しました"
       redirect_to("/CPM-program/posts/index")
     else
-      render("CPM-program/posts/edit")
+      render("/CPM-program/posts/edit")
     end
   end
 
