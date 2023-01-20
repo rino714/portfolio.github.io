@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+
+  
   def index
     @posts = Post.all.order(created_at: :desc)
   end
@@ -11,6 +13,7 @@ class PostsController < ApplicationController
     @post = Post.new
   end
   
+  protect_from_forgery except: :create
   def create
     @post = Post.new(content: params[:content])
     if @post.save
