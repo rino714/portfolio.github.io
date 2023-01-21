@@ -39,6 +39,6 @@ viの中身を変更,かえた
         <li class="header-list-item"><%= link_to("新規登録", "/CPM-program/signup")%></li>
 
 
-                <li class="header-list-item"><%= link_to("応用問題","/CPM-program/posts/new")%></li>
-        <li class="header-list-item"><%= link_to("Rubyクイズ","/CPM-program/seikou")%></li>
-        <li class="header-list-item"><%= link_to("応用問題みんなの回答","/CPM-program/posts/index")%></li>
+    <li class="list-icon-item"><%= link_to(image_tag("/mail-icon.png"), "/CPM-program/users/index") %></li>
+        <li class="list-icon-item"><%= link_to(image_tag("/ring-icon.png"), "/CPM-program/users/index") %></li>
+        <li class="list-icon-item"><%= link_to(image_tag("/human-icon.png"), "/CPM-program/users/index") %></li>
