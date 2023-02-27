@@ -1,0 +1,665 @@
+/*
+ * CSS for hatarakukatati project
+ */
+ /*å…¨ãƒšãƒ¼ã‚¸å…±é€šéƒ¨åˆ†ã®CSSå§‹ã¾ã‚Š*/
+ @charset "UTF-8";
+ 
+ * {
+     margin: 0px;
+     padding: 0px;
+ }
+  
+  html {
+     font-size: 100%;
+   }
+  body{
+     margin: 0;
+     height: 100%;
+     font-family: 'DotGothic16', sans-serif;
+     font-family: 'Noto Sans JP', sans-serif;
+     color: rgb(20, 20, 20);
+     line-height: 1.7;
+ }
+ img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+  a{
+      text-decoration: none;
+      color: #333;
+      padding-bottom: 1px;
+      transition: 0.5ms;
+  }
+  li{
+      list-style: none;
+  }
+  .section-title-box{
+    text-align: center;
+  }
+  .section-title-box .section-title{
+    border: rgb(58, 58, 58) solid 2px;
+    padding: 3px 55px 3px 55px;
+    display: inline-block;
+    background-color: rgb(255, 255, 123);
+    position: relative;
+  }
+  .section-title-box :before, .section-title-box :after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 100px;
+    height: 2px;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+  }
+  
+  .section-title-box:before {
+    left:-120px;
+  }
+  .section-title-box:after {
+    left: 280px;
+  }
+  .section-title-box .title-red{
+    background-color: #FFA3A3;
+    margin-bottom: 80px;
+  }
+
+ /*å…¨ãƒšãƒ¼ã‚¸å…±é€šéƒ¨åˆ†ã®CSSçµ‚ã‚ã‚Š*/
+
+/*ãƒ˜ãƒƒãƒ€ãƒ¼ã®CSSå§‹ã¾ã‚Š*/
+  #header{
+      display: flex;
+      align-items: center;
+      margin-left: 25px;
+      margin-right: 25px;
+      justify-content: space-between;
+  }
+  .logo-space{
+      display: flex;
+      align-items: center;
+  }
+  .header-nav .header-list{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      
+  }
+  .header-nav .header-list li{
+      border-left: solid 2px #b5b2b2a2;
+  }
+  .header-nav .header-list li:nth-child(4){
+    border-right: solid 2px #b5b2b2a2;
+  }
+  .header-nav .header-list li a{
+      display: inline-block;
+  }
+  .header-nav .header-list li a:hover{
+      opacity: 0.6;
+      transition: all 0.3s 0s ease;
+  }
+  .header-nav .header-list li a .header-list_item{
+    padding: 0 40px 0 40px;
+  }
+  .header-nav .header-list li a p{
+      text-align: center;
+  }
+  .header-nav .header-list li a .list-title{
+      font-size: 1.2rem;
+  }
+  .header-nav .header-list li a .list-sub-title{
+      font-size: 0.9rem;
+  }
+  /*ãƒ˜ãƒƒãƒ€ãƒ¼ã®CSSçµ‚ã‚ã‚Š*/
+  /*ãƒ˜ãƒƒãƒ€ãƒ¼*/
+  #footer{
+      text-align: center;
+      color: #fff;
+      background-color: #454545;
+      padding: 20px 0 20px 0;
+  }
+  /*ãƒ˜ãƒƒãƒ€ãƒ¼çµ‚ã‚ã‚Š*/
+
+  /*-----------------------------------------------------ãƒã‚¿ãƒ©ã‚¯ã‚’ã¿ã‚‹ãƒšãƒ¼ã‚¸ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼*/
+  /*ãƒ¡ã‚¤ãƒ³ãƒ“ã‚¸ãƒ¥ã‚¢ãƒ«ã®CSSå§‹ã¾ã‚Š*/
+  #mainvisual{
+      position: relative;
+      height: 78vh;
+      width: auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .hataraku-mainvisual{
+    background-image: url(../hatarakukatati-web/img/S__74686479.jpg);
+  }
+  #mainvisual .mainvisual-inner{
+      position: absolute;
+      background-color: #ffffffc3;
+      width: 500px;
+      top: 150px;
+      left: 70px;
+  }
+  .mainvisual-inner .mainvisual-title{
+      text-align: center;
+      font-size: 2.4rem;
+      font-weight: bold;
+      margin-bottom: 60px;
+      padding-top: 30px;
+  }
+  .mainvisual-inner .mainvisual-title::after{
+      content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 225px;
+  height: 2px;
+  background: #868686;
+  transform: translateX(-50%);
+  }
+  .mainvisual-inner .mainvisual-text{
+      text-align: center;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      padding-bottom: 30px;
+  }
+  #mainvisual .decoration{
+      position: absolute;
+      right: 60px;
+      bottom: -50px;
+      font-size: 5.5rem;
+      color: #666666ee;
+      font-weight: bold;
+      letter-spacing: 7px;
+      font-family: 'Corben', cursive;
+  }
+    /*ãƒ¡ã‚¤ãƒ³ãƒ“ã‚¸ãƒ¥ã‚¢ãƒ«ã®CSSçµ‚ã‚ã‚Š*/
+    /*åƒãæ–¹ã‚’è¦‹ã‚‹ã®CSSå§‹ã¾ã‚Š*/
+    .select-view{
+        background-color: #fff1f1;
+        width: 100%;
+    }
+    .select-view .select-inner{
+        margin: 0 120px 0 120px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        
+    }
+    .select-item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 90px;
+    }
+    .select-li{
+        border: #818181 solid 2px;
+        border-radius: 15px;
+        height: 400px;
+        width: 350px;
+    }
+    .select-li:hover{
+        opacity: 0.7;
+        transition: all 0.3s 0s ease;
+    }
+    .select-pink{
+        background-color: rgb(255, 225, 230);
+    }
+    .select-orange{
+        background-color: rgb(255, 217, 147);
+    }
+    .select-yellow{
+        background-color: rgb(255, 255, 162);
+    }
+    .select-box .select-title-box{
+        text-align: center;
+        margin-top: -20px;
+        margin-bottom: 15px;
+      }
+      .select-title-box .select-title{
+        border: rgb(58, 58, 58) solid 2px;
+        border-radius: 10px;
+        width: 200px;
+        height: 45px;
+        display: inline-block;
+        background-color: #fff;
+        padding-top: 2.5px;
+        font-size: 1.2rem;
+      }
+    .select-box .select-text{
+        margin-top: 30px;
+        margin-left: 15px;
+        margin-right: 14px;
+
+    }
+    .select-box figure{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .select-box img{
+        width: 300px;
+        height: 220px;
+        border: #fff solid 13px;
+    }
+    /*åƒãæ–¹ã‚’è¦‹ã‚‹ã®CSSçµ‚ã‚ã‚Š*/
+
+    /*--------è¨˜äº‹ã®ä¸€è¦§ã‚’è¦‹ã‚‹ã¨ã“ã‚å§‹ã¾ã‚Š----------------*/
+    #article-view {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 50px;
+        padding-top: 40px;
+        background-image: url(../hatarakukatati-web/img/bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .view-left{
+          width: 55%;
+          margin-top: 70px;
+      }
+      .view-left article {
+        position: relative;
+      }
+      .article-inner{
+        margin-bottom: 100px;
+        border: #333 solid 2px;
+        border-radius: 15px;
+        padding: 30px 15px 15px 15px;
+        background-color: rgb(255, 225, 230);
+        position: relative;
+      }
+      .article-inner .sticky-note{
+        width: 250px;
+        transform: rotate( -30deg );
+        position: absolute;
+        left: -50px;
+        top: -16px;
+      }
+      .article-flex{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .article-title-red{
+        color: #FF6341;
+        font-size: 1.8rem;
+      }
+      .article-flex img{
+        width: 225px;
+        height: 300px;
+        margin-left: 30px;
+        border: 10px solid #ffffff;
+
+      }
+      .view-left .article-title {
+        font-size: 1.5rem;
+        margin: 0 0 15px 30px;
+      }
+      .article-box-left .article-name{
+        position: relative;
+      }
+      .article-box-left .article-name::after{
+        content: '';
+    position: absolute;
+    top: 120%;
+    left: 20%;
+    width: 200px;
+    height: 1px;
+    background: #aaaaaa;
+    transform: translateX(-50%);
+    }
+    .article-box-left .article-name{
+      margin-left: 30px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+      /*-------------------------------------ã‚µã‚¤ãƒ‰ãƒãƒ¼ ---------------------------*/
+      .sidebarbox {
+        padding: 0.2em 1em;
+        background: #666;
+        width: 210px;
+    }
+    .sidebarbox p {
+        margin: 0; 
+        padding: 0;
+        color: #fff;
+    }
+#form2{
+  position:relative;
+  width:500px;	
+  margin-bottom:20px;
+  }
+  #sbox2{
+  height:35px;
+  padding:0 10px; 
+  position:absolute; 
+  left:0;
+  top:0; 
+  border-radius:2px;
+  outline:0;
+  background:#fff;	
+  box-shadow: 2px 2px 6px #333;
+  }
+  #sbtn2{
+  height:35px;
+  position:absolute; 
+  left:255px;/*ã‚¢ã‚¤ã‚³ãƒ³å·¦å³ã®ä½ç½®èª¿æ•´*/
+  top:0;
+  background:none;
+  color:#666;
+  border:none;
+  font-size:20px;/*ã‚¢ã‚¤ã‚³ãƒ³ã‚µã‚¤ã‚º*/
+  }
+  #sbtn5:hover{
+  color:#7fbfff;
+  }
+
+  #sidebar {
+    width: 25%;
+    padding: 20px;
+    margin-top: 85px;
+  }
+  #sidebar .side-title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .archive {
+    text-align: center;
+    margin-bottom: 60px;
+    position: sticky;
+    top: 0;
+    padding-top: 70px;
+  }
+  .archive li {
+    font-size: 1rem;
+    padding: 16px;
+  }
+  .corporate-title-box{
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 15px;
+  }
+  .corporate-title{
+    border: rgb(58, 58, 58) solid 2px;
+    border-radius: 10px;
+    width: 200px;
+    height: 45px;
+    display: inline-block;
+    background-color: #fff;
+    padding-top: 2.5px;
+    font-size: 1.2rem;
+    background-color: rgb(255, 255, 162);
+  }
+  .corporate-title-orange{
+    background-color:   rgb(255, 217, 147);
+  }
+  .corporate-box{
+    border: #818181 solid 2px;
+    border-radius: 15px;
+    width: 270px;
+    height: 500px;
+    background-color: #fff;
+  }
+  .corporate-box:nth-child(2){
+    height: 320px;
+    margin-top: 40px;
+  }
+
+      /*-------------------------------------------
+    SP
+    -------------------------------------------*/
+    @media screen and (max-width: 767px) {
+        #article-view {
+          flex-direction: column;
+        }
+        .view-flex {
+          width: 100%;
+        }
+        #sidebar {
+          width: 100%;
+          padding: 0;
+          margin: 0;
+        }
+        .archive {
+          padding-top: 0;
+        }
+        main .article-title {
+          font-size: 1.3rem;
+          margin: 10px 0 15px 0;
+        }
+        .article-title-area{
+          padding-top: 50px;
+      
+        }
+        .article-title-area figure{
+          width: 70px;
+          margin-right: 15px;
+        }
+        .meta{
+          margin-left: 80px;
+        }
+        .meta li{
+          font-size: 0.7rem;
+        }
+      }
+    /*è¨˜äº‹ã®ä¸€è¦§è¦‹ã‚‹ã¨ã“ã‚çµ‚ã‚ã‚Š*/
+  /*-----------------------------------------------------ãƒã‚¿ãƒ©ã‚¯ã‚’ã¿ã‚‹ãƒšãƒ¼ã‚¸ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼*/
+ /*みんなの声コーナー*/
+ #voice{
+  background-color: #fff1f1;
+ }
+  .voice-mainvisual{
+    background-image: url(../hatarakuweb/hataraku_view/img/pink2.jpg);
+  }
+  .post-container {
+    max-width: 600px;
+    margin: 60px auto 0 auto;
+    padding-bottom: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    clear: both;
+  }
+  .posts-index{
+    padding-top: 80px;
+  }
+  .posts-index-item {
+      padding: 25px 30px;
+      background-color: white;
+      overflow: hidden;
+      box-shadow: 0 2px 6px #c1ced7;
+      margin-top: 40px;
+    }
+/*ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«*/
+#president_profile{
+  position: relative;
+  height: 150vh;
+  width: auto;
+  background-image: url(img/22707667.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.president_title-box .president_profile_title{
+    font-size: 2.5em;
+    border-radius: 35px;
+    border: solid #000 2px;
+    background-color: #fff;
+}
+
+.president_profile_title{
+  padding: 0 20px;
+}
+
+h3.president_profile_title{
+    position: absolute;
+    top: 20px;
+    right: 850px;
+    font-weight: bold;
+}
+
+h3.president_profile_title::after{
+  content: '';
+  color: #ff6dfd;
+}
+
+.profile{
+  font-size: 2em;
+  display: inline-block;
+}
+
+.profile-bg{
+    position: relative;
+}
+
+.president-item{
+    margin-top: 60px;
+    position: absolute;
+    top: 0;
+    left: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 218, 224);
+    height: 600px;
+    border-radius: 50px 0 0 50px ;
+    border: solid 3px #777777;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.president-item img{
+    width: 500px;
+    border: 10px solid #ffffff;
+    margin-left: 20px;
+}
+
+h4{
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-top: 60px;
+  border-bottom: 2px #000000;
+}
+
+.president_profile_name::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 225px;
+    height: 2px;
+    background: #818181;
+    transform: translateX(-50%);
+}
+/*ä¼šç¤¾æ¦‚è¦*/
+.profile-bg-2{
+    position: relative;
+}
+
+.overview-item{
+    margin-top: 725px;
+    position: absolute;
+    top: 0;
+    right: 700px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 218, 224);
+    height: 600px;
+    width: 1000px;
+    border-radius: 0 50px 50px 0;
+    border: solid 3px #777777;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.profile-bg-2 img{
+    width: 580px;
+    position:absolute;
+    top: 735px;
+    left: 1050px;
+}
+
+.overview-title-box{
+  padding: 30px 0 0;
+}
+
+.overview-title-box .overview-title{
+  font-size: 2.5em;
+  border-radius: 35px;
+  border: solid #000 2px;
+  display: inline-block;
+  background-color: #fff;
+  padding: 0 30px;
+}
+
+.overview{
+  font-size: 2em;
+  transform: translateX(20%);
+  transform: translateY(5%);
+  line-height: 2.5;
+}
+
+/*è¨˜äº‹å†…å®¹å§‹ã¾ã‚Š*/
+#article{
+  background-color: rgb(255, 225, 230);
+}
+
+div.article-box{
+  padding: 20px 100px;
+  margin: 50px 100px;
+  background-color: #fff;
+  border: solid #000 3px;
+  border-radius: 40px;
+}
+
+.article_work{
+  padding: 40px 0 60px;
+  font-size: 3em;
+  text-align: center;
+}
+
+
+
+
+.article-work-text{
+  font-size: 30px;
+  padding: 70px 0;
+}
+
+
+
+.section-title{
+  background-color: #fff;
+  margin: 0 6em;
+  padding: 1em 2em;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.section-title::before,
+.section-title::after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.section-title::before {
+  background-color: rgb(255, 167, 182);
+  left: 0;
+  top: 0;
+  z-index: -1;
+  border: solid 2px #000;
+}
+
+.section-title::after {
+  background-color: #fff;
+  top: 5px;
+  left: 5px;
+  z-index: -2;
+  border: solid 2px #000;
+}
+
+/*ç¤¾é•·ãƒšãƒ¼ã‚¸çµ‚ã‚ã‚Š*/
