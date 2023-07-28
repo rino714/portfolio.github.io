@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'quiz/index'
   get 'quiz/new'
   get 'quiz/show'
@@ -22,4 +23,14 @@ Rails.application.routes.draw do
 
   get "quiz/index" => "quiz#index"
   get "seikou" => "quiz#quiz-2"
+
+  get "users/sign_up" => "devise/sessions#new"
+
+  get "quizzes/index" => "quizzes#index"
+  get "quizzes/new" => "quizzes#new"
+  post "quizzes/create" => "quizzes#create"
+  resources :quizzes
+
+  get "rankings/index" => "rankings#index"
+  
 end

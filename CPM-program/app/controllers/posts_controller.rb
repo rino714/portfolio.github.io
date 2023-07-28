@@ -18,9 +18,9 @@ class PostsController < ApplicationController
     @post = Post.new(content: params[:content])
     if @post.save
       flash[:notice] = "応用問題を送信しました"
-      redirect_to("/CPM-program/posts/index")
+      redirect_to("/posts/index")
     else
-      render("/CPM-program/posts/new")
+      render("/posts/new")
     end
   end
   
@@ -34,9 +34,9 @@ class PostsController < ApplicationController
     @post.content = params[:content]
     if @post.save
       flash[:notice] = "応用問題を修正しました"
-      redirect_to("/CPM-program/posts/index")
+      redirect_to("/posts/index")
     else
-      render("/CPM-program/posts/edit")
+      render("/posts/edit")
     end
   end
 
