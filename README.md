@@ -18,3 +18,5 @@
 ## 情報デザイン論最終課題
 * 作品リンク：[情報デザイン論最終課題](https://rino714.github.io/portfolio.github.io/university-classes/index.html)
 * 使用言語：HTML5　CSS3
+
+https://rino714.github.io/portfolio.github.io/test.html
